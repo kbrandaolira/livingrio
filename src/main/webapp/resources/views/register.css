@@ -1,0 +1,66 @@
+.panel {
+	border: 0px;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0px;
+}
+
+.panel-heading {
+	border-radius: 0px;
+}
+
+.panel-title {
+	font-size: 18px;
+}
+
+#genderMaleText {
+  margin-left: -5px;
+  margin-top: -20px;
+  margin-right: 30px;
+}
+#createAccount_result_autocomplete {
+	position: absolute;
+	padding: 5px;
+	border-radius: 0px 0px 5px 5px;
+	top: 44px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	width: 448px;
+	color: #246F9E;
+	z-index: 1007 !important;
+}
+
+.createAccount_autocomplete_img {
+	height: 100px !important;
+	width: 120px !important;
+}
+
+#genderFemaleText {
+  margin-left: -5px;
+  margin-top: -20px;
+  margin-right: 30px;
+}
+
+span.input-group-addon {
+	border-radius: 0px;
+	padding: 12px;
+}
+
+input#login-password, input#login-confirm-password,
+	#createPerson-dataNascimento, #createAccount_input_autocomplete, input#login-username
+	{
+	padding: 12px;
+	height: 43px !important;
+	border-radius: 0px;
+	border: 1px solid #ccc;
+}
+
+.btn {
+	margin-bottom: 10px;
+	padding: 12px;
+	border-radius: 0px;
+	border: 0px !important;
+	height: 40px;
+	margin-top: 0px;
+	font-size: 12px !important;
+	text-transform: uppercase;
+}

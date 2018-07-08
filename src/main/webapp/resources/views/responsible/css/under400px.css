@@ -1,0 +1,208 @@
+/* Cooreções para resoluções menores que 400pixels */
+
+@media (min-width:1px) and (max-width: 400px)
+{
+	
+	.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  color: #FFF;
+}
+	
+	/* ALL */
+	
+	#login_web{
+		display: none !important;
+	}
+  
+  	#login_mobile{
+  		display: block !important;
+  	}
+	
+		#result_autocomplete {
+	  width: 100%;
+  right: 10px !important;
+  left: -14px;
+  top: 105px;
+  z-index: 100;
+  border-bottom: 5px solid;
+	}
+	
+	.autocomplete_img{
+		margin-bottom: 10px;
+		width:90px !important;
+	}
+	
+	.navbar-inverse .navbar-toggle{
+		border: 0px;
+	}
+	
+	.autocompleteNeighborhoodInfo{
+	  margin-left: 100px;
+  margin-top: -80px;
+
+	
+	}
+	
+	.generalComment{
+	
+		margin-bottom:20px !important;
+	
+	}
+	
+	.generalComment .criterionName{
+	
+		margin-top:22px !important;
+		
+	}
+	
+	.pageTitleDescription{
+	
+		display:none;
+	}
+	
+	.pageTitleDescriptionMobile{
+	
+		display:block !important;
+		font-size: 12px;
+	
+	}
+	
+	.ncm_text{
+	
+		  margin-left: 80px !important;
+  			margin-top: -68px !important;
+	
+	}
+	
+	.ncm_stars{
+	
+		margin-left:80px !important;;
+	
+	}
+	
+	.pageTitleText {
+	
+		border-radius:0px 50px 50px 0px;
+		margin-left: -30px;
+		border-radius:0px;
+	
+	}
+	
+	#loginMobileBtn{
+		display: block !important;
+	}
+	
+	#loginBtn{
+		display: none;
+	}
+	
+	div#bs-example-navbar-collapse-1{
+		border:0px !important;
+		border-color:#246F9E !important;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .0);
+  		 box-shadow: inset 0 1px 0 rgba(255, 255, 255, .0); 
+	}
+	
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border:0px;
+  border-color: none;
+}
+	
+	  #input_autocomplete {
+  
+  	width:100%;
+  	border-radius:50px;
+  
+  }
+  
+  #fullWidthFooter{
+  	display: none;
+  }
+  
+  #under400pxFooter{
+  	display: block !important;
+  }
+  
+
+
+	/* Index */
+	
+	.neighborhoodInfo{
+		  margin-left: 105px;
+  margin-top: -74px;
+  margin-bottom: 15px;
+	}
+	
+	.userInfo{
+		  margin-left: 105px;
+  margin-top: -76px;
+  margin-bottom: 10px;
+	}
+	.userComment{
+	margin-bottom:8px;
+	}
+  
+  
+  .indexAdsense{
+    padding-left: 20%;
+  
+  }
+  #slider{
+  	display:none !important;
+  	visibility: hidden !important;
+  }
+  
+  /* Dynamic Place */
+  
+  #completeRankingBtn{
+  	display: none;
+  }
+  
+  .be_img {
+  	width:20%;
+  	display: inline;
+  }
+  
+  .be_info {
+  	width:70%;
+  		display: inline;
+  		  margin-left: -23px;
+  }
+  
+  .be_info p{
+  	display: inline-block;
+  	
+  }
+  
+  p.be_info_overall {
+  margin-left: 10px;
+}
+
+	/* Quem Somos */
+	
+	#about_codeImg{
+		
+		display:none !important;
+		
+	}
+	
+	#developersKayan{
+		margin-top:10px;
+	}
+	
+	.developers .thumbnail{
+		border:0px;
+		border-bottom:1px solid #eee;
+	}
+	
+	
+	#about_text{
+		margin-top:10px;
+	}
+	
+	.page-header {
+		margin: 0; 
+		margin-top: 7px;
+		
+	}
+	
+}

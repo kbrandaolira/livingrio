@@ -1,0 +1,108 @@
+@CHARSET "ISO-8859-1";
+
+.row {
+	padding-top: 10px;
+}
+
+body {
+	background-color: white;
+}
+
+
+#btn_evaluate{
+	font-size: 14px;
+	font-family: 'Ubuntu' !important ;
+	color:#fff;
+	margin-top: -16px;
+	margin-right: -8px;
+	border-radius: 0px 0px 0px 0px;
+	
+}
+
+.inner {
+  margin: 0 auto !important;
+  width: 112px; /* Altere para o valor da largura desejada. */
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -10px;
+}
+
+.well {
+	
+	padding-top: 5px;
+	background-color: #fff;
+	
+}
+
+.panel-heading{
+	background-color: #fff !important;
+	
+}
+
+#mediaAvaliacoesBairrosBox{
+	font-family: 'Chivo', sans-serif;
+	font-size: 14px;
+	
+}
+.textBold{
+	font-family: 'Viga', sans-serif;
+
+	font-size: 15px;
+	
+}
+
+.panel {
+
+	margin-top:6px;
+			border:0px;
+		  border-bottom: 1px solid #ccc;
+		  border-radius:0px;
+	
+	}
+	.panel-heading {
+	
+		border-radius:0px;
+	
+	}
+#pinBoot {
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+}
+
+img {
+/* 	width: 100%; */
+	max-width: 100%;
+	height: auto;
+}
+
+.white-panel {
+	position: absolute;
+	background: white;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+}
+/*
+	stylize any heading tags withing white-panel below
+	*/
+.white-panel h1 {
+	font-size: 1em;
+}
+
+.white-panel h1 a {
+	color: #A92733;
+}
+
+.white-panel:hover {
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	margin-top: -5px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+

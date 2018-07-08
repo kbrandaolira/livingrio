@@ -1,0 +1,101 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+<!-- <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="location" value="classpath:application.properties"/>
+</bean> -->
+
+	<context:component-scan base-package="br.com.livingrio" />
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+
+
+	<!-- LOCALHOST -->
+		<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/livingrio" />
+		<property name="username" value="root" />
+		<property name="password" value="dds3@1" />
+	</bean>	
+
+	<!-- PRODUÇÃO -->
+<!-- 
+<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://aad9cbtqgj8dk.cirybkvmrzk4.us-west-2.rds.amazonaws.com:3306/livingrio" />
+		<property name="username" value="livingrio" />
+		<property name="password" value="1t$0urdb" />
+	</bean> 
+-->
+
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+		</property>
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+<!-- <bean id="connectionFactoryLocator"
+		class="org.springframework.social.connect.support.ConnectionFactoryRegistry">
+		<property name="connectionFactories">
+			<list>
+				<bean
+					class="org.springframework.social.facebook.connect.FacebookConnectionFactory">
+					<constructor-arg value="387609931420513" />
+					<constructor-arg value="d78dda060155fa6dd3d185b7ab4be992" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="usersConnectionRepository"
+		class="org.springframework.social.connect.jdbc.JdbcUsersConnectionRepository">
+		<constructor-arg ref="dataSource" />
+		<constructor-arg ref="connectionFactoryLocator" />
+		<constructor-arg ref="textEncryptor" />
+	</bean>
+
+	<bean id="connectionRepository" factory-method="createConnectionRepository"
+		factory-bean="usersConnectionRepository" scope="request">
+		<constructor-arg value="#{request.userPrincipal.name}" />
+		<aop:scoped-proxy proxy-target-class="false" />
+	</bean>
+
+	<bean class="org.springframework.social.connect.web.ConnectController">
+		<constructor-arg ref="connectionFactoryLocator" />
+		<constructor-arg ref="connectionRepository" />
+	</bean>
+
+	
+        <bean id="textEncryptor" class="org.springframework.security.crypto.encrypt.Encryptors" 
+            factory-method="noOpText" />
+  
+	
+    <beans profile="prod">
+        <bean id="textEncryptor" class="org.springframework.security.crypto.encrypt.Encryptors" 
+                factory-method="text">
+            <constructor-arg value="${security.encryptPassword}" />
+            <constructor-arg value="${security.encryptSalt}" />
+        </bean>
+    </beans>  -->
+    
+    <bean id="reCaptcha" class="net.tanesha.recaptcha.ReCaptchaImpl">
+		<property name="privateKey" value="6LcW3OASAAAAAKVX2duVsSy2uMMHL105-jPDrHMD"/>
+	</bean>
+
+</beans>

@@ -1,0 +1,120 @@
+#best_evaluations .row{
+	margin-top:5px;
+
+}
+
+select {
+	border-radius:0px !important;
+
+}
+
+.bx-wrapper{
+	margin:0px !important;
+	
+}
+
+option{
+	padding: 5px;
+	border: 1px solid #eee;
+	cursor: pointer;
+
+}
+
+.filterItem{
+	font-size:11px;
+	
+}
+
+.glyphicon {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+#banner1_text1{
+	font-size: 36px;
+	background-color: #fff;
+
+}
+
+.bx-wrapper .bx-viewport {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border: solid #fff 5px;
+    left: -5px;
+    background: #fff;
+}
+
+.caption1{
+	padding: 15px;
+	position:absolute;
+	bottom:0px;
+	left:30px;
+	z-index:10;
+	width: 100%;
+	height:100%;
+	color:white;
+	background-color: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+  	text-shadow:0 1px 0 rgba(255, 255, 255, 0.5);
+  
+}
+
+.caption2{
+	font-size: 20px !important;
+	
+}
+
+.banner1_msg_h1{
+	font-size: 30px;
+
+}
+
+#msgHome{
+	
+	margin-left: 40px;
+	
+}
+
+
+<!-- OR -->
+
+#or {
+	
+	padding: 10px;
+	
+}
+
+#orDiv {
+	text-align: center;
+	color: #ccc;
+	float: left;
+	margin-left: 35px;
+	padding: 10px;
+}
+
+#orDiv span {
+	display: inline-block;
+	margin-top: 6px;
+}
+
+#orDiv span:before, #orDiv span:after {
+	border-top: 1px solid #ccc;
+	display: block;
+	height: 1px;
+	content: " ";
+	width: 40%;
+	position: absolute;
+	left: 0;
+	top: 1.2em;
+}
+
+#orDiv span:after {
+	right: 0;
+	left: auto;
+}

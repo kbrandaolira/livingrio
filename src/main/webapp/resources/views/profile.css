@@ -1,0 +1,113 @@
+
+.btn-good-look{
+	
+	width: 100% !important;
+	display: block !important;
+	background-color: #FAF2E1 !important;
+	border-radius:0px;
+	border-bottom:1px solid #E0D3B4;
+	color: #000;
+	
+}
+
+
+.btn:focus {
+  outline: none;
+}
+
+#borderTopFix{
+	
+	border-bottom:1px solid #E0D3B4;
+	
+}
+
+.btn-good-look:hover {
+	
+	background-color: #FAEFD7 !important;
+	
+}
+
+#pinBoot {
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+}
+
+.field {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.value {
+	
+}
+
+.space {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.generalComment {
+	font-style: italic;
+}
+
+.well {
+	border-radius: 0px;
+	border: 0px !important;
+	border-bottom: 1px solid #eee;
+}
+
+
+body {
+	background-color: #eee;
+}
+
+#pinBoot {
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.white-panel {
+	position: absolute;
+	background: white;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+}
+
+.small {
+	font-size: 11px;
+	border-radius: 0px;
+	padding: 6px;
+}
+
+.actions {
+	margin-left: 10px;
+}
+/*
+stylize any heading tags withing white-panel below
+*/
+.white-panel h1 {
+	font-size: 1em;
+}
+
+.white-panel h1 a {
+	color: #A92733;
+}
+
+.white-panel:hover {
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	margin-top: -5px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+

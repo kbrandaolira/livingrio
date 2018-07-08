@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	    xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+             
+	<persistence-unit name="livingrio"> 
+	
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		
+		<!-- Classes Persistidas -->
+		<class>br.com.livingrio.City</class>
+		<class>br.com.livingrio.Criterion</class>
+		<class>br.com.livingrio.Evaluation</class>
+		<class>br.com.livingrio.EvaluationCriterion</class>
+		<class>br.com.livingrio.EvaluationStatus</class>
+		<class>br.com.livingrio.Neighborhood</class>
+		<class>br.com.livingrio.NeighborhoodCriterion</class>
+		<class>br.com.livingrio.Person</class>
+		<class>br.com.livingrio.Picture</class>
+		<class>br.com.livingrio.Region</class>
+		<class>br.com.livingrio.State</class> 
+		<class>br.com.livingrio.Testimony</class> 
+		<class>br.com.livingrio.Question</class> 
+		<class>br.com.livingrio.Answer</class> 
+		<class>br.com.livingrio.Liked</class> 
+		
+		<!-- Propriedades -->
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="false" /> 
+			<property name="hibernate.format_sql" value="true" />  
+		</properties>
+	
+	</persistence-unit> 
+ 
+</persistence>

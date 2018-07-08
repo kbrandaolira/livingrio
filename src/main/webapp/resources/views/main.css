@@ -1,0 +1,131 @@
+
+
+.navbar-inverse {
+	background-color: #246F9E;
+	border: 0px !important;
+}
+
+.navbar {
+	margin-bottom: 0px !important;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+
+/* Footer
+		-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	background-color: #5ba0d4;
+}
+
+.text-muted {
+	color: #fff;
+	text-align: center;
+}
+
+body>.container {
+	padding: 60px 15px 0;
+}
+
+.container .text-muted {
+	margin: 20px 0;
+}
+
+.footer>.container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+code {
+	font-size: 80%;
+}
+
+#result_autocomplete {
+  position: absolute;
+  padding-left: 15px;
+  border-radius: 0px 0px 5px 5px;
+  top: 44px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  color: #246F9E;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+#input_autocomplete {
+	border-radius: 50px;
+	border: 1px solid #fff !important;
+	border-bottom: 0px !important;
+	width: 620px;
+}
+
+#result_autocomplete {
+    width: 590px;
+    margin-left: 14px;
+    margin-top: -1px;
+}
+
+.autocompleteResultItem {
+	padding: 11px;
+	border-top: 1px solid #eee;
+	cursor: pointer;
+	  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.autocompleteResultItem:hover {
+	background-color: #FFFBF2;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff !important;
+}
+
+.profileMenu {
+	background-color: #62a8d1;
+	border-left: 1px solid #5bc0de;
+	border-right: 1px solid #5bc0de;
+}
+
+#profileImage {
+	width: 30px;
+	margin-top: -13px;
+	margin-bottom: -10px;
+	margin-right: 6px;
+}
+
+.navbar-brand {
+	font-family: 'Kaushan Script', cursive !important;
+	letter-spacing: 2px !important;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,
+	.navbar-inverse .navbar-nav>.open>a:focus {
+	background-color: #5093BA !important;
+}
+
+
+
+
+
+
+
